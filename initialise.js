@@ -47,14 +47,16 @@ function CreateFPVectors(){
 	FP.Suburb=FPCSV.GetEntriesColumn(9, 1, FPCSV.FileLength()-1);
 	FP.State=FPCSV.GetEntriesColumn(10, 1, FPCSV.FileLength()-1);
 	FP.Postcode=FPCSV.GetEntriesColumn(11, 1, FPCSV.FileLength()-1);
-	// var _nonWordRe = /[^\w, ]+/;
-	// var simplified = '-' + value.toLowerCase().replace(_nonWordRe, '')
 }
 
 // Simplify names
 function SimplifyNames(Group){
 	for (var i in Group.ID){
-		Group.First
+		Group.FirstName[i]=Simplify(Group.FirstName[i]);
+		Group.LastName[i]=Simplify(Group.LastName[i]);
+		Group.Address[i]=Simplify(Group.Address[i]);
+		Group.Suburb[i]=Simplify(Group.Suburb[i]);
+		Group.State[i]=Simplify(Group.State[i]);
 	}
 }
 
