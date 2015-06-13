@@ -47,7 +47,15 @@ function CreateFPVectors(){
 	FP.Suburb=FPCSV.GetEntriesColumn(9, 1, FPCSV.FileLength()-1);
 	FP.State=FPCSV.GetEntriesColumn(10, 1, FPCSV.FileLength()-1);
 	FP.Postcode=FPCSV.GetEntriesColumn(11, 1, FPCSV.FileLength()-1);
+	// var _nonWordRe = /[^\w, ]+/;
+	// var simplified = '-' + value.toLowerCase().replace(_nonWordRe, '')
 }
+
+// Simplify names
+function SimplifyNames(){
+	
+}
+// http://stackoverflow.com/questions/10473745/compare-strings-javascript-return-of-likely
 
 function CreateFuzzyArrays(){
 	// 	Two filter types:
