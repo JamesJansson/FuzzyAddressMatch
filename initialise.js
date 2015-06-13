@@ -54,8 +54,14 @@ function CreateFPVectors(){
 // Simplify names
 function SimplifyNames(Group){
 	for (var i in Group.ID){
-		
+		Group.First
 	}
+}
+
+function Simplify(StringInput){
+	var _nonWordRe = /[^\w, ]+/;
+	var simplified = StringInput.toLowerCase().replace(_nonWordRe, '');
+	return simplified;
 }
 
 function CreateFuzzyArrays(){
