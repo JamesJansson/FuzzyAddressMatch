@@ -1,0 +1,20 @@
+Plan:
+
+load AEC csv into app
+
+Two filter types:
+LineNUM +" "+ Name +" "+ DOB
+LineNUM +" "+ Name +" "+ DOB +" "+ Address
+
+Load our CSV into an array
+User enters a number to start from
+Presses "lookup"
+Performs a name, DOB, address search
+on finish
+div name table 
+
+
+
+has a button 
+
+

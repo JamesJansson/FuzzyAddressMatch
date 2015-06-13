@@ -5,9 +5,27 @@
 
 <script type="text/javascript" src="lib/fuzzyset.js"></script>
 
+<link rel="stylesheet" type="text/css" href="interface/button.css">
+<script type="text/javascript" src="interface/interfacebuttons.js"></script>
+
+<script type="text/javascript" src="interface/jquery/jquery.js"></script>
+
+
+<script type="text/javascript" src="initialise.js"></script>
+<script type="text/javascript" src="lib/csvtools.js"></script>
+<script type="text/javascript" src="lib/papaparse/papaparse.js"></script>
+<script type="text/javascript" src="lib/fuzzyset.js"></script>
 
 <body onload="Initialise();">
+Press this button to load data
+<div id="LoadDataButton" class="SolidButton" onClick="LoadCSVData();"> Load CSV Data </div>
+FP ID:
+<input type='text' id='FPIDBox' value=0><br>
+<div id="LoadDataButton" class="SolidButton" onClick="IncrementID();"> Next </div>
+<div id="LoadDataButton" class="SolidButton" onClick="SearchPersonNameDOBAddress();"> Name DOB Address </div>
+<div id="LoadDataButton" class="SolidButton" onClick="SearchPersonNameDOB();"> Name DOB only </div>
 
+<div id="SearchResults"></div>
 
 </body>
 </html>
