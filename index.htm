@@ -15,15 +15,18 @@
 <script type="text/javascript" src="lib/csvtools.js"></script>
 <script type="text/javascript" src="lib/papaparse/papaparse.js"></script>
 <script type="text/javascript" src="lib/fuzzyset.js"></script>
+<script type="text/javascript" src="lib/string_score.js"></script>
+
 
 <body onload="Initialise();">
 Press this button to load data
 <div id="LoadDataButton" class="SolidButton" onClick="LoadCSVData();"> Load CSV Data </div>
 FP ID:
 <input type='text' id='FPIDBox' value=0><br>
-<div id="LoadDataButton" class="SolidButton" onClick="IncrementID();"> Next </div>
-<div id="LoadDataButton" class="SolidButton" onClick="SearchPersonNameDOBAddress();"> Name DOB Address </div>
-<div id="LoadDataButton" class="SolidButton" onClick="SearchPersonNameDOB();"> Name DOB only </div>
+<div class="SolidButton" onClick="IncrementID();"> Next </div>
+<div id="LoadDataButton" class="SolidButton" onClick="FindScoreAndDisplayPeople(LastNameAndDOBScore);"> Last Name And DOB </div>
+
+
 
 <div id="SearchResults"></div>
 
