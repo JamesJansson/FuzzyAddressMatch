@@ -52,10 +52,11 @@ function CreateFPVectors(){
 }
 
 // Simplify names
-function SimplifyNames(){
-	
+function SimplifyNames(Group){
+	for (var i in Group.ID){
+		
+	}
 }
-// http://stackoverflow.com/questions/10473745/compare-strings-javascript-return-of-likely
 
 function CreateFuzzyArrays(){
 	// 	Two filter types:
