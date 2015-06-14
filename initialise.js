@@ -11,10 +11,14 @@ function Initialise(){
 	console.log("Opening AEC CSV");
 	AECCSV=new CSVFile('./aecdata/aec.csv')
 	console.log("Opening FP CSV");
-	FPCSV=new CSVFile('./futurepartydata/fp.csv');
+	FPCSV=new CSVFile('./futurepartydata/fporiginal.csv');
 }
 
-
+function LoadOriginalAndFPFiles(){
+	AECCSV=new CSVFile('./futurepartydata/fporiginal.csv')
+	console.log("Opening FP CSV");
+	FPCSV=new CSVFile('./futurepartydata/fpnb.csv');
+}
 
 function LoadCSVData(){
 	CreateAECVectors();
